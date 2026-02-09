@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>包包滴消消乐</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>包包滴消消乐</h1>
+    <div class="controls">
+      <button id="soundToggle">🔊 音效 ON</button>
+      <button id="restartBtn">重新開始</button>
+    </div>
+    <p>
+      關卡 <span id="levelNo">1</span> |
+      分數 <span id="score">0</span> |
+      步數 <span id="moves">0</span> |
+      目標 <span id="target">0</span>
+    </p>
+    <div id="board"></div>
+  </div>
+
+  <audio id="sfxSwap" src="swap.mp3" preload="auto"></audio>
+  <audio id="sfxWin" src="win.mp3" preload="auto"></audio>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
